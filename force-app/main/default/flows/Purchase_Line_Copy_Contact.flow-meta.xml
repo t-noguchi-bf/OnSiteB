@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <assignments>
+        <name>Copy_Contact</name>
+        <label>伝票の取引先責任者をコピー</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Contact__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Purchase_Slip__r.Contact__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>購入明細の作成・更新時に、購入伝票の取引先責任者を明細にコピーする</description>
+    <environments>Default</environments>
+    <interviewLabel>購入明細：取引先責任者のコピー {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>購入明細：取引先責任者のコピー</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value><stringValue>LightningFlowBuilder</stringValue></value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value><stringValue>AUTO_LAYOUT_CANVAS</stringValue></value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Copy_Contact</targetReference>
+        </connector>
+        <object>Purchase_Line__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
