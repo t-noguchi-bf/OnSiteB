@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Type__c</fullName>
+    <label>注文の種類</label>
+    <description>店頭での購入か、オンラインの単品・定期便か</description>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>店頭販売</fullName><default>false</default><label>店頭販売</label></value>
+            <value><fullName>オンライン単品</fullName><default>false</default><label>オンライン単品</label></value>
+            <value><fullName>オンライン定期便</fullName><default>false</default><label>オンライン定期便</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

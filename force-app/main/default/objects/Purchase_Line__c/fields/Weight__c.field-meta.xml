@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weight__c</fullName>
+    <label>内容量</label>
+    <description>豆の量り売りの単位</description>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>100g</fullName><default>false</default><label>100g</label></value>
+            <value><fullName>200g</fullName><default>true</default><label>200g</label></value>
+            <value><fullName>500g</fullName><default>false</default><label>500g</label></value>
+            <value><fullName>1箱</fullName><default>false</default><label>1箱</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
