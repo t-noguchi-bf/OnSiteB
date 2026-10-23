@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Line_Count__c</fullName>
+    <label>明細件数</label>
+    <description>購入明細の行数を自動で集計</description>
+    <inlineHelpText>購入明細の行数を自動で集計</inlineHelpText>
+    <type>Summary</type>
+    <summaryOperation>count</summaryOperation>
+    <summaryForeignKey>Purchase_Line__c.Purchase_Slip__c</summaryForeignKey>
+</CustomField>

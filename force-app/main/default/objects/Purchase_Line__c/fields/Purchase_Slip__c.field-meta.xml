@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Slip__c</fullName>
+    <label>購入伝票</label>
+    <description>この明細が属する購入伝票</description>
+    <type>MasterDetail</type>
+    <referenceTo>Purchase_Slip__c</referenceTo>
+    <relationshipName>Purchase_Lines</relationshipName>
+    <relationshipLabel>購入明細</relationshipLabel>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount__c</fullName>
+    <label>金額</label>
+    <description>単価×数量で自動計算</description>
+    <inlineHelpText>単価×数量で自動計算されます</inlineHelpText>
+    <type>Currency</type>
+    <precision>12</precision>
+    <scale>0</scale>
+    <formula>Unit_Price__c * Quantity__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+</CustomField>
