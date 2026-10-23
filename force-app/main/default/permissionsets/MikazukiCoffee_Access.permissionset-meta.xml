@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>三日月珈琲 項目アクセス</label>
+    <description>三日月珈琲向けに追加した項目の参照・編集権限</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Store__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>
